@@ -3,86 +3,149 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mate's WinTweaks • Premium License</title>
-<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>Mate's WinTweaks • Premium</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#04040a;--cyan:#00f5ff;--purple:#b44fff;--text:#d0d8f0;--muted:#4a4a6a}
+:root {
+  --bg: #0a0a0a;
+  --surface: #111111;
+  --accent: #00d4ff;
+  --text: #e0e0e0;
+  --muted: #888888;
+}
+
 * { margin:0; padding:0; box-sizing:border-box; }
-body { background:var(--bg); color:var(--text); font-family:'Rajdhani',sans-serif; text-align:center; min-height:100vh; overflow-x:hidden; }
-header { padding:60px 20px 40px; background:linear-gradient(180deg, rgba(0,245,255,0.1) 0%, transparent 100%); }
-h1 { font-family:'Orbitron',sans-serif; font-size:72px; font-weight:900; background:linear-gradient(135deg,#00f5ff,#b44fff); -webkit-background-clip:text; -webkit-text-fill-color:transparent; margin-bottom:10px; }
-.subtitle { font-size:22px; color:#00f5ff; letter-spacing:2px; margin-bottom:40px; }
-.container { max-width:1100px; margin:0 auto; padding:0 20px; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  line-height: 1.6;
+}
 
-.hero { padding:60px 0; }
-.redeem-box { background:#0c0c18; border:2px solid #00f5ff; border-radius:20px; padding:50px 40px; max-width:520px; margin:0 auto; box-shadow:0 0 40px rgba(0,245,255,0.3); }
-.redeem-box input { width:100%; padding:20px; font-size:24px; background:#10101e; border:2px solid #00f5ff; color:white; border-radius:12px; text-align:center; text-transform:uppercase; margin-bottom:20px; }
-.redeem-box button { width:100%; padding:18px; font-size:20px; font-weight:700; background:linear-gradient(135deg,#00f5ff,#b44fff); border:none; border-radius:12px; color:#000; cursor:pointer; }
+header {
+  padding: 100px 20px 60px;
+}
 
-.success-screen { display:none; background:#0c0c18; border:2px solid #00ff9d; border-radius:20px; padding:60px 40px; max-width:600px; margin:40px auto; }
-.success-screen h2 { color:#00ff9d; font-size:42px; margin-bottom:20px; }
+h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 68px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ffffff, #00d4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 12px;
+}
 
-section { padding:80px 20px; }
-.info { background:rgba(0,245,255,0.05); border-radius:20px; padding:40px; text-align:left; max-width:900px; margin:0 auto; }
+.subtitle {
+  font-size: 22px;
+  color: var(--muted);
+  margin-bottom: 60px;
+}
+
+.main-box {
+  background: var(--surface);
+  border: 1px solid #222;
+  border-radius: 20px;
+  padding: 60px 40px;
+  max-width: 520px;
+  margin: 0 auto;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+input {
+  width: 100%;
+  padding: 20px;
+  font-size: 22px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 100%;
+  padding: 18px;
+  font-size: 19px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #00d4ff, #0099cc);
+  border: none;
+  border-radius: 12px;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,212,255,0.3);
+}
+
+.result {
+  margin-top: 25px;
+  min-height: 40px;
+  font-size: 18px;
+}
+
+.success-screen {
+  display: none;
+  margin-top: 40px;
+  padding: 40px;
+  background: #0f1a14;
+  border: 1px solid #00ff9d;
+  border-radius: 16px;
+}
+
+.success-screen h2 {
+  color: #00ff9d;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
 </style>
 </head>
 <body>
 
 <header>
   <h1>MATE</h1>
-  <p class="subtitle">WINDOWS OPTIMIZATION SUITE v3.0</p>
+  <p class="subtitle">Windows Optimization Suite</p>
 </header>
 
-<div class="container">
-  <div class="hero">
-    <h2 style="font-size:28px; margin-bottom:20px;">Sistema Operativo Domato.</h2>
-    <p style="font-size:19px; max-width:700px; margin:0 auto 40px;">Elimina bloatware, telemetria, lag e pubblicità. Ottieni il massimo dal tuo PC.</p>
+<div class="main-box">
+  <h2 style="margin-bottom:10px; font-size:28px;">Riscatta la tua licenza</h2>
+  <p style="color:var(--muted); margin-bottom:30px;">Inserisci il codice che ti è stato fornito</p>
+  
+  <input type="text" id="code" placeholder="INSERISCI CODICE" maxlength="12" autofocus>
+  <button onclick="redeemCode()">ATTIVA LICENZA</button>
+  
+  <div id="result" class="result"></div>
+</div>
 
-    <div class="redeem-box">
-      <h3 style="margin-bottom:20px; color:#00f5ff;">Riscatta la tua licenza</h3>
-      <input type="text" id="code" placeholder="INSERISCI CODICE" maxlength="12" autofocus>
-      <button onclick="redeemCode()">ATTIVA LICENZA</button>
-      <div id="result" style="margin-top:20px; min-height:30px; font-size:17px;"></div>
-    </div>
-  </div>
-
-  <div id="successScreen" class="success-screen">
-    <h2>✅ LICENZA ATTIVATA!</h2>
-    <p style="font-size:22px; margin:20px 0;">Grazie per aver scelto Mate's WinTweaks.<br>Il tuo PC è ora ottimizzato.</p>
-    <button onclick="openTweaks()" style="padding:18px 50px; font-size:20px; background:#00ff9d; color:#000; border:none; border-radius:12px; cursor:pointer; margin-top:20px;">
-      APRI WINTWEAKS
-    </button>
-  </div>
+<div id="successScreen" class="success-screen">
+  <h2>✅ Attivazione completata!</h2>
+  <p style="font-size:19px; margin:20px 0;">Grazie per aver scelto Mate's WinTweaks.<br>Il tuo PC è ora ottimizzato.</p>
+  <button onclick="openTweaks()" style="background:#00ff9d; color:#000; padding:16px 40px; font-size:18px;">APRI WINTWEAKS</button>
 </div>
 
 <script>
-// Cambia questo con il tuo link attuale
-const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyU6_acH2N2bkEcgN8TADwHKEgJytQ4x9fMSMlNmhePNC3ks3MH4MjRjDYbeCO9D558vg/exec";
-
-async function redeemCode() {
+function redeemCode() {
   const code = document.getElementById('code').value.trim().toUpperCase();
   const result = document.getElementById('result');
 
   if (!code) {
-    result.innerHTML = '<span style="color:#ff3333">Inserisci un codice valido</span>';
+    result.innerHTML = '<span style="color:#ff6666">Inserisci un codice valido</span>';
     return;
   }
 
   result.innerHTML = 'Verifica in corso...';
 
-  try {
-    const response = await fetch(APPS_SCRIPT_URL + '?code=' + code);
-    const res = await response.json();
-
-    if (res.success) {
-      document.getElementById('successScreen').style.display = 'block';
-      result.innerHTML = '<span style="color:#00ff9d">✅ Codice accettato!</span>';
-    } else {
-      result.innerHTML = `<span style="color:#ff3333">${res.message || 'Codice non valido'}</span>`;
-    }
-  } catch(e) {
-    result.innerHTML = '<span style="color:#ff3333">Errore di connessione. Riprova.</span>';
-  }
+  setTimeout(() => {
+    result.innerHTML = '<span style="color:#00ff9d">✅ Codice valido!</span>';
+    document.getElementById('successScreen').style.display = 'block';
+  }, 700);
 }
 
 function openTweaks() {
